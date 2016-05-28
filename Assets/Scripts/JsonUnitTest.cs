@@ -6,9 +6,9 @@ public class JsonUnitTest : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-       // Debug.Log(jsonDataEqualityTest(""));
         StartCoroutine(jsonGetRequest());
         ExtensionMethods.jsonDataEqualityTest("");
+        gameObject.getOrAddComponent<Rigidbody>();
     }
    
     IEnumerator jsonGetRequest() {
