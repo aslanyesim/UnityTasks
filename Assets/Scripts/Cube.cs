@@ -4,7 +4,7 @@ public class Cube : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-        createCube(1.0f, 1.0f, 1.0f, Color.red);
+        //createCube(1.0f, 1.0f, 1.0f, Color.red);
     }
 
     public void createCube(float x, float y, float z, Color c) {
