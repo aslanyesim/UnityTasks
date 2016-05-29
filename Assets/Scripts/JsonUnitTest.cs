@@ -8,7 +8,7 @@ public class JsonUnitTest : MonoBehaviour {
     void Start() {
         StartCoroutine(jsonGetRequest());
         ExtensionMethods.jsonDataEqualityTest("");
-        gameObject.getOrAddComponent<Rigidbody>();
+        //gameObject.getOrAddComponent<Rigidbody>();
     }
     IEnumerator jsonGetRequest() {
         UnityWebRequest www = UnityWebRequest.Get("http://httpbin.org/get");                    //get json data
