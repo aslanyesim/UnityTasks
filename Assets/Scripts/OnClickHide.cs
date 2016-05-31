@@ -2,6 +2,9 @@
 
 public class OnClickHide : MonoBehaviour, OnClickMonoInterface {
     public void OnPointerClicked() {
-        GetComponent<MeshRenderer>().enabled = false;                       //Hides the game object
+        if (GetComponent<MeshRenderer>().enabled != false) {
+            GetComponent<MeshRenderer>().enabled = false;                       //Hides the game object
+            Main.count++;
+        }
     }
 }
